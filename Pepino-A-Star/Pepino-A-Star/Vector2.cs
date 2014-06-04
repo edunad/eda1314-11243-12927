@@ -22,6 +22,16 @@ namespace Pepino_A_Star
             this.SetPos(X,Y);
         }
 
+        public Vector2(Vector2 _st)
+        {
+            this.SetPos(_st.X, _st.Y);
+        }
+
+        public override string ToString()
+        {
+            return "{"+this.X+";"+this.Y+"}";
+        }
+
         public void SetPos(int X, int Y)
         {
             this.X = X;

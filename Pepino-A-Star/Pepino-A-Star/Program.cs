@@ -14,9 +14,11 @@ namespace Pepino_A_Star
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PathFinderMenu());
+
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new PathFinderMenu());
+            
         }
     }
 }

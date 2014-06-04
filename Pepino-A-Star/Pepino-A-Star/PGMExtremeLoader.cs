@@ -27,7 +27,7 @@ namespace Pepino_A_Star
 
             _loadThread = new Thread(LoadingThead);
             _loadThread.Start();
-            
+
         }
 
 
@@ -45,8 +45,8 @@ namespace Pepino_A_Star
             }
             else
             {
-                if(pVal <= 100)
-   ﻿                BarProg.Value = pVal;     
+                if (pVal <= 100)
+   ﻿                BarProg.Value = pVal;
             }
 
         }
@@ -92,7 +92,7 @@ namespace Pepino_A_Star
                 SetText("Image Found!");
                 Thread.Sleep(700);
 
-                GlobalStuff._image = new Bitmap("Texture/el_pepino.bmp");
+                GlobalStuff._OriginalImage = new Bitmap("Texture/el_pepino.bmp");
                 ContinueProgram();
 
                 return;
@@ -121,57 +121,61 @@ namespace Pepino_A_Star
 
             Bitmap _image = null;
 
-            using (StreamReader sr = new StreamReader("Texture/peppersgrad.pgm"))
+            string[] lines = File.ReadAllLines("Texture/peppersgrad.pgm");
+            int Indx = 0;
+
+            foreach (string line in lines)
             {
-                string read = "";
-                int Indx = 0;
 
-                while((read = sr.ReadLine() ) != ""){
+                if (line == "") continue;
 
-                    if (Indx == 2)
+                if (Indx == 2)
+                {
+                    string[] size = line.Split(' ');
+                    Width = Convert.ToInt32(size[0]);
+                    Height = Convert.ToInt32(size[1]);
+
+                    _image = new Bitmap(Width, Height);
+                }
+                else if (Indx > 4)
+                {
+                    if (_image == null) break;
+
+                    if (X < Width - 1)
+                        X += 1;
+                    else
                     {
-                        string[] size = read.Split(' ');
-                        Width = Convert.ToInt32(size[0]);
-                        Height = Convert.ToInt32(size[1]);
-
-                        _image = new Bitmap(Width,Height);
-                    }
-                    else if (Indx > 4)
-                    {
-                        if (_image == null) break;
-
-                        if (X < Width - 1)
-                            X += 1;
-                        else
-                        {
-                            X = 0;
-                            Y += 1;
-                        }
-
-                        if (Y > Height - 1) break;
-
-                        byte Clr = Convert.ToByte(read);
-                        _image.SetPixel(X, Y, Color.FromArgb(Clr, Clr, Clr));
+                        X = 0;
+                        Y += 1;
                     }
 
-                    Indx += 1;
-                    int Prog = (Indx * 100) / 262148;
+                    if (Y > Height - 1) break;
 
-                    SetText("Creating el_pepino.bmp ( " + Prog + "% )");
-                    SetProgress(Prog);
+                    byte Clr = Convert.ToByte(line);
+                    _image.SetPixel(X, Y, Color.FromArgb(Clr, Clr, Clr));
                 }
 
-                if (_image != null)                
-                    if(!_image.Size.IsEmpty)
-                        _image.Save("Texture/el_pepino.bmp",System.Drawing.Imaging.ImageFormat.Bmp);
-                    
-                
+                Indx += 1;
+                int Prog = (Indx * 100) / lines.Count();
+
+                SetText("Creating el_pepino.bmp ( " + Prog + "% )");
+                SetProgress(Prog);
             }
 
-            GlobalStuff._image = _image;
+            if (_image != null)
+                if (!_image.Size.IsEmpty)
+                    _image.Save("Texture/el_pepino.bmp", System.Drawing.Imaging.ImageFormat.Bmp);
+
+
+            GlobalStuff._OriginalImage = _image;
             ContinueProgram();
 
             #endregion
+
+        }
+
+        private void LStatus_Click(object sender, EventArgs e)
+        {
 
         }
 

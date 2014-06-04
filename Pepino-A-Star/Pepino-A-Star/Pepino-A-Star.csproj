@@ -44,13 +44,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AStartPathFinder.cs" />
+    <Compile Include="AStarPathFinder.cs" />
     <Compile Include="GlobalStuff.cs" />
     <Compile Include="PathFinderMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PathFinderMenu.Designer.cs">
       <DependentUpon>PathFinderMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PathSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PathSettings.Designer.cs">
+      <DependentUpon>PathSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PathTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PathTime.Designer.cs">
+      <DependentUpon>PathTime.cs</DependentUpon>
     </Compile>
     <Compile Include="PGMExtremeLoader.cs">
       <SubType>Form</SubType>
@@ -65,6 +77,12 @@
     <EmbeddedResource Include="PathFinderMenu.resx">
       <DependentUpon>PathFinderMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PathSettings.resx">
+      <DependentUpon>PathSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PathTime.resx">
+      <DependentUpon>PathTime.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PGMExtremeLoader.resx">
       <DependentUpon>PGMExtremeLoader.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +94,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -89,6 +108,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrench_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asterisk_yellow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
