@@ -9,8 +9,25 @@ using System.Threading.Tasks;
 
 namespace Pepino_A_Star
 {
+    /// <summary>
+    /// @author Eduardo Fernandes nº12927
+    /// @author Damien Fialho nº11243
+    /// 
+    /// @date 06/06/1024
+    /// @code https://code.google.com/p/eda1314-11243-12927/
+    /// 
+    /// PixelUtilities created by us.
+    /// </summary>
+    /// 
     public static class PixelUtilities
     {
+        /// <summary>
+        /// Faster Method to get the Color from the given pixel
+        /// </summary>
+        /// <param name="bmp">The Bitmap</param>
+        /// <param name="x">X Position</param>
+        /// <param name="y">Y Position</param>
+        /// <returns>Pixel Color</returns>
         public static Color GetPixel(Bitmap bmp, int x, int y)
         {
             lock (bmp)
@@ -37,6 +54,13 @@ namespace Pepino_A_Star
             }
         }
 
+        /// <summary>
+        /// Draws a square on the bitmap
+        /// </summary>
+        /// <param name="bmp">The Image</param>
+        /// <param name="_pos">Position to Draw</param>
+        /// <param name="_size">Size</param>
+        /// <param name="cl">Color</param>
         public static void DrawSquare(Bitmap bmp, Vector2 _pos, Vector2 _size, Color cl)
         {
             Graphics gStored = Graphics.FromImage(bmp);
@@ -45,6 +69,13 @@ namespace Pepino_A_Star
             gStored.Save();
         }
 
+        /// <summary>
+        /// Faster Method to set the Pixel Color
+        /// </summary>
+        /// <param name="bmp">The Image</param>
+        /// <param name="x">X Position</param>
+        /// <param name="y">Y Position</param>
+        /// <param name="c">Color</param>
         public static void SetPixel(Bitmap bmp, int x, int y, Color c)
         {
             lock (bmp)

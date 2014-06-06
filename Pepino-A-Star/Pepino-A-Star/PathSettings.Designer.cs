@@ -42,7 +42,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.CHeurisitc = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.DrawNeighh = new System.Windows.Forms.CheckBox();
             this.BPathColor = new System.Windows.Forms.Button();
             this.PPathColor = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -71,7 +70,6 @@
             this.GSettings.TabIndex = 4;
             this.GSettings.TabStop = false;
             this.GSettings.Text = "Pathfinder Points";
-            this.GSettings.Enter += new System.EventHandler(this.GSettings_Enter);
             // 
             // label5
             // 
@@ -176,26 +174,14 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.DrawNeighh);
             this.groupBox2.Controls.Add(this.BPathColor);
             this.groupBox2.Controls.Add(this.PPathColor);
             this.groupBox2.Location = new System.Drawing.Point(5, 173);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(155, 73);
+            this.groupBox2.Size = new System.Drawing.Size(155, 52);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pathfinder Other Settings";
-            // 
-            // DrawNeighh
-            // 
-            this.DrawNeighh.AutoSize = true;
-            this.DrawNeighh.Location = new System.Drawing.Point(24, 49);
-            this.DrawNeighh.Name = "DrawNeighh";
-            this.DrawNeighh.Size = new System.Drawing.Size(104, 17);
-            this.DrawNeighh.TabIndex = 2;
-            this.DrawNeighh.Text = "Show Neighbors";
-            this.DrawNeighh.UseVisualStyleBackColor = true;
-            this.DrawNeighh.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // BPathColor
             // 
@@ -219,7 +205,7 @@
             // 
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Location = new System.Drawing.Point(5, 252);
+            this.groupBox3.Location = new System.Drawing.Point(5, 231);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(155, 57);
             this.groupBox3.TabIndex = 7;
@@ -252,7 +238,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(165, 316);
+            this.ClientSize = new System.Drawing.Size(165, 298);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -268,7 +254,6 @@
             this.GSettings.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
@@ -296,6 +281,5 @@
         private System.Windows.Forms.ColorDialog colorDialog_Path;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox DrawNeighh;
     }
 }

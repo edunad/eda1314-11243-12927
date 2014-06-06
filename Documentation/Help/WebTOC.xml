@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="a55aba98-67b8-4a4e-a0de-6c6fa34f2e85" Title="Pepino_A_Star" Url="html/914dd8fb-2b3b-49bd-69c0-8f0390a34c19.htm">
+    <HelpTOCNode Id="4b2546eb-404d-45aa-9564-cad4b0248eec" Title="AStarPathFinder Class" Url="html/e2415511-c1a4-e1c4-e02f-da4c45c7512f.htm">
+      <HelpTOCNode Id="6dfa5be4-5c4e-4d2e-aa63-8cf3cde960da" Title="AStarPathFinder Methods" Url="html/45e5e195-10d0-fb1e-2021-fb2d1959f908.htm">
+        <HelpTOCNode Title="CalculateCost Method " Url="html/b1759721-273c-2440-de71-2ad574fc1a8c.htm" />
+        <HelpTOCNode Title="CreateNeighbors Method " Url="html/dc8007dc-2fcf-3bb3-6d95-fe86649f66b5.htm" />
+        <HelpTOCNode Title="Euclidean Method " Url="html/214e688d-f6cc-f5ce-ef3a-4e5cfceeb7a7.htm" />
+        <HelpTOCNode Title="FindPath Method " Url="html/331c7c85-ddfe-0e9b-dce2-357fddf87085.htm" />
+        <HelpTOCNode Title="Get1DVector Method " Url="html/504e4031-9e5c-a242-f6bb-72e369aa5ebd.htm" />
+        <HelpTOCNode Title="GetMinTotal Method " Url="html/468cd3a0-6e67-5e5d-f78f-b3a2e6ab0eee.htm" />
+        <HelpTOCNode Title="GetPGMData Method " Url="html/5813f90d-f566-48ce-eb92-0fc2542131e1.htm" />
+        <HelpTOCNode Title="IsOutsidePicture Method " Url="html/130de0f6-668e-1c77-8200-a0eb5c81aea4.htm" />
+        <HelpTOCNode Title="ManhattenH Method " Url="html/9e02bbaf-fea7-79f8-1a1e-3969545d0ca1.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ae0256d3-6f61-4746-a96c-eeb7f1145fde" Title="GlobalStuff Class" Url="html/ccfb9fca-1658-50a4-adab-e32bb7bc3d20.htm">
+      <HelpTOCNode Id="40495b89-5884-4d71-89e0-c27ca8864aaf" Title="GlobalStuff Fields" Url="html/a18c962e-932a-71a0-2ecf-76698aacaa04.htm">
+        <HelpTOCNode Title="_drawNeigbor Field" Url="html/588b2635-1ed5-a7ec-d256-114615eb9f17.htm" />
+        <HelpTOCNode Title="_heuristicMODE Field" Url="html/6fd1d2d8-aa05-4561-3076-e77bc0afbb6a.htm" />
+        <HelpTOCNode Title="_loadMenu Field" Url="html/392135b5-0525-b775-10c2-3b2eae5b6192.htm" />
+        <HelpTOCNode Title="_mediaExperimental Field" Url="html/a3b7a8cc-a5fa-5086-3f32-88cf0786e662.htm" />
+        <HelpTOCNode Title="_OriginalImage Field" Url="html/378d8079-b06f-9f53-de43-4b419ff2bffe.htm" />
+        <HelpTOCNode Title="_OverlayImage Field" Url="html/74782eae-fc7d-3ece-48aa-5fad49b07ec7.htm" />
+        <HelpTOCNode Title="_panelSettings Field" Url="html/0753588a-ee14-73cf-b83a-ae60e5586991.htm" />
+        <HelpTOCNode Title="_pathColor Field" Url="html/09328526-90bf-4228-1efb-2752214fddea.htm" />
+        <HelpTOCNode Title="_pathMenu Field" Url="html/031ec33b-d370-d262-9aa0-0f7ecbb1ae5b.htm" />
+        <HelpTOCNode Title="_pgmData Field" Url="html/12ed3a0a-c001-7128-3cb2-fbd45dad352c.htm" />
+        <HelpTOCNode Title="_timeMenu Field" Url="html/2c601d59-1e25-f9f1-693d-7de5b69f4481.htm" />
+        <HelpTOCNode Title="Height Field" Url="html/47c9b4c5-7f5a-d3c0-038f-fc5e9588e015.htm" />
+        <HelpTOCNode Title="IsImageLoaded Field" Url="html/67343ced-05fe-2a6b-f80a-f35e662a8b79.htm" />
+        <HelpTOCNode Title="Width Field" Url="html/b339fa41-f00f-74a8-4389-98bbeecc3c6b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9fedc506-5f48-4e3e-ab8e-53a68a64b645" Title="Node Class" Url="html/142a3559-52a7-e42e-378c-1585cbb817fb.htm">
+      <HelpTOCNode Title="Node Constructor " Url="html/ed0e7231-fd59-f67f-b7ea-9892487b1794.htm" />
+      <HelpTOCNode Id="a0d331a9-3d45-44c4-a5cd-8f38d004ae4a" Title="Node Fields" Url="html/9b925e90-df4d-c39f-0b4b-90ce5fcbffeb.htm">
+        <HelpTOCNode Title="_cost Field" Url="html/ce22cda4-c216-82e7-8281-a4294c004bfa.htm" />
+        <HelpTOCNode Title="_heuristic Field" Url="html/2d691677-88e8-b0d9-eac6-308abd7e81e2.htm" />
+        <HelpTOCNode Title="_neightbors Field" Url="html/0f8c5d98-b1b4-5ed4-2c7b-3baaac657c08.htm" />
+        <HelpTOCNode Title="_parent Field" Url="html/27be7ee3-5eb5-ea34-e2ac-ba57ab62ff0e.htm" />
+        <HelpTOCNode Title="_pos Field" Url="html/c612a213-15f8-a0ea-0781-36b821d865e5.htm" />
+        <HelpTOCNode Title="_total Field" Url="html/018df791-2027-98b4-ddd1-b3545281a4f7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7c367a7b-5216-4f3e-82de-ab050ff8baa6" Title="Node Methods" Url="html/6bdb8d46-b0a0-42cf-d23d-21bbcb1d46aa.htm">
+        <HelpTOCNode Title="CalcTotal Method " Url="html/74e7924e-5b52-e0c9-42df-358e6fb07fc7.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a99f2937-050b-4f54-84b1-9c3028b0eaeb" Title="PathFinderMenu Class" Url="html/e00b6c97-970d-f6a9-3df8-d3a527f348a3.htm">
+      <HelpTOCNode Title="PathFinderMenu Constructor " Url="html/d2a9ee38-a69f-3e33-adc9-4a3fee4631f2.htm" />
+      <HelpTOCNode Id="a4b2e140-6d80-4b62-b6d8-b103d82a87cb" Title="PathFinderMenu Fields" Url="html/63f7d0ef-435d-5150-7ad9-d266ab7650a4.htm">
+        <HelpTOCNode Title="_PathfinderThrd Field" Url="html/ecc5dd4c-28e7-5f00-4a02-0edd784f737a.htm" />
+        <HelpTOCNode Title="ToggleClock Field" Url="html/8974dcfb-893a-ae0f-1560-0418561d9d9b.htm" />
+        <HelpTOCNode Title="ToggleMenu Field" Url="html/3799ccf6-d702-5931-dd8d-2d3337b694af.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8aa25b03-ada6-4d48-8f06-9501d937e879" Title="PathFinderMenu Methods" Url="html/336cf9eb-7723-ef73-1cc6-d732ce156ae4.htm">
+        <HelpTOCNode Id="47f0a7e5-dd90-41e2-91a3-71eca104d516" Title="Dispose Method " Url="html/e8aeab8b-2646-c0cc-473d-e2d59e317166.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/d0cf6823-6378-660a-25ec-f22c78c920b4.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="FindPath Method " Url="html/bc0dd0c0-4f77-6f93-f237-41066d760170.htm" />
+        <HelpTOCNode Title="SetImagePreview Method " Url="html/30e0aebf-bfcc-d9b8-e1e5-8aa6b55b59ff.htm" />
+        <HelpTOCNode Title="SetPathFinished Method " Url="html/857769e2-901b-a553-cf46-59bd1176f2be.htm" />
+        <HelpTOCNode Title="SetText Method " Url="html/1c046957-1876-2d67-6581-35adf7b0c66b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PathFinderMenu Properties" Url="html/53f7f7d6-250e-2dc8-ae51-4af402ce6cae.htm" />
+      <HelpTOCNode Title="PathFinderMenu Events" Url="html/135c59cd-1171-874f-67e5-78d25716472f.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="PathFinderMenu.FinishPath Delegate" Url="html/3b9eab3f-68cf-2315-7e45-ff7651f9e984.htm" />
+    <HelpTOCNode Title="PathFinderMenu.SetImageHandler Delegate" Url="html/932df33b-11c3-dd09-44ed-150001170a09.htm" />
+    <HelpTOCNode Title="PathFinderMenu.SetTextHandler Delegate" Url="html/06fc59f6-2757-e278-40be-77dee4f38cfa.htm" />
+    <HelpTOCNode Id="9a6e2ba0-8358-47e2-9523-9e2714c54f96" Title="PathSettings Class" Url="html/32df7f1e-1372-7297-ae0e-b2f48b33a023.htm">
+      <HelpTOCNode Title="PathSettings Constructor " Url="html/a6e568a8-690a-12ec-dc83-433b4946c5cf.htm" />
+      <HelpTOCNode Id="8afc3ddd-5586-446f-af4e-63f99fd6a289" Title="PathSettings Fields" Url="html/a159341b-f9f2-227f-0db0-133c38f358b2.htm">
+        <HelpTOCNode Title="AnimPos Field" Url="html/035c8058-521a-af48-a263-ca3a20e74cd6.htm" />
+        <HelpTOCNode Title="CHeurisitc Field" Url="html/3bf879b5-8c96-4fe7-fe5a-e00267d8edf0.htm" />
+        <HelpTOCNode Title="TXEnd Field" Url="html/b389acc9-f026-683b-56a4-0b114cb1ec94.htm" />
+        <HelpTOCNode Title="TXStart Field" Url="html/357564b5-76db-7634-5837-6c273f774e83.htm" />
+        <HelpTOCNode Title="TYEnd Field" Url="html/c4f45c7e-0522-a41f-44ab-e4b4addfbafe.htm" />
+        <HelpTOCNode Title="TYStart Field" Url="html/c192a805-3472-241f-f570-51c1efaf713c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b0f015fc-9c68-4e71-b54d-01ee7a7cf296" Title="PathSettings Methods" Url="html/9473a87c-8788-ce1f-1dce-7c714703146d.htm">
+        <HelpTOCNode Id="55495907-3add-4c49-aeff-87b6fb9c62e5" Title="Dispose Method " Url="html/83e26a98-bee8-f8f5-476d-fa4357e62b4b.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/ac1471f6-c995-362a-891e-950fc9888d19.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="DoHideAnimation Method " Url="html/cc4365e2-6765-2651-b302-2d1b08d7a5eb.htm" />
+        <HelpTOCNode Title="DoShowAnimation Method " Url="html/0fc2317a-01b1-0fb8-a0fe-2adb9afc7848.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PathSettings Properties" Url="html/8e4e76ff-0b4b-f336-d4d8-7620f44e7ab3.htm" />
+      <HelpTOCNode Title="PathSettings Events" Url="html/44db2802-f54a-b1e5-9295-8c6ee66bcb96.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="82c76c03-9e50-4a14-b785-068837a096de" Title="PathTime Class" Url="html/1adedf2d-4c86-3305-2654-3d4ee4d605fd.htm">
+      <HelpTOCNode Title="PathTime Constructor " Url="html/9471e7f0-57c7-9bf7-e948-ab979d209102.htm" />
+      <HelpTOCNode Id="2207ece4-c016-4480-9673-0a607236a387" Title="PathTime Fields" Url="html/5012db11-5f43-3dd0-6e57-866bd9c5a75a.htm">
+        <HelpTOCNode Title="AnimPos Field" Url="html/4cbfa8f6-a326-503c-ba47-67e48661ecab.htm" />
+        <HelpTOCNode Title="ListNodeTime Field" Url="html/49d5b337-fbf3-1ac8-effa-dad10d5698dc.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a1c27c86-6ad6-450e-9b6d-0e47daddcdf0" Title="PathTime Methods" Url="html/b146fe7c-5d57-50db-3b4f-6bb4e7bae1e5.htm">
+        <HelpTOCNode Title="AddChartPoint Method " Url="html/870be6cd-9323-3b22-3e57-97728abd3f99.htm" />
+        <HelpTOCNode Title="AddNodeInfo Method " Url="html/35a8bd43-7527-2c7c-4b07-815034a518a8.htm" />
+        <HelpTOCNode Title="ClearNodeList Method " Url="html/c4d08124-7568-e364-3437-4afcaa3ad318.htm" />
+        <HelpTOCNode Id="c3d25707-a8a6-4597-a521-8835166245d2" Title="Dispose Method " Url="html/bfdd86b3-0167-8e5f-b7fe-44ed8f650cc2.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/7374e4c2-5fbb-9232-557c-92fba4972db9.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="DoHideAnimation Method " Url="html/19e6b9d4-b201-f300-0f4d-3222866060a4.htm" />
+        <HelpTOCNode Title="DoShowAnimation Method " Url="html/b832264c-59b5-e0d0-1ea3-f1b77a2805c5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PathTime Properties" Url="html/3e2ed65c-ba80-ac43-a4b5-5b51e74ba439.htm" />
+      <HelpTOCNode Title="PathTime Events" Url="html/075b3e72-7b45-905e-fc26-149d49ddf2cd.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="PathTime.AddNodeList Delegate" Url="html/7b0d498f-8246-18c5-1a50-97af4dbf3c59.htm" />
+    <HelpTOCNode Title="PathTime.AddTimeChart Delegate" Url="html/350378bd-3d24-5035-8758-a2d4250d3b70.htm" />
+    <HelpTOCNode Title="PathTime.ClearList Delegate" Url="html/2ce633a4-2d22-088a-8698-3d60072f5b3a.htm" />
+    <HelpTOCNode Id="96b3e30d-f5fb-4924-98b5-cf2ff622788a" Title="PGMExtremeLoader Class" Url="html/37f91b66-c11c-1f3a-8b02-984f14090dc5.htm">
+      <HelpTOCNode Title="PGMExtremeLoader Constructor " Url="html/8c36de3d-d23f-ac07-8376-c9db135a14d6.htm" />
+      <HelpTOCNode Id="bb329c5c-77b8-4f7c-81df-764d8e88d053" Title="PGMExtremeLoader Fields" Url="html/69d30fe7-7b62-69ae-f61a-c4a4d74ec6b8.htm">
+        <HelpTOCNode Title="_loadThread Field" Url="html/2c1d9133-f354-91d9-2003-ebb0966ba8bc.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f9c11b5a-e889-4957-828e-9bcfd94f2088" Title="PGMExtremeLoader Methods" Url="html/e1eca09a-3126-3e46-ac3d-4a8c44c660af.htm">
+        <HelpTOCNode Title="ContinueProgram Method " Url="html/67b9b5fc-879b-0778-2c8e-b67e4e9abaa4.htm" />
+        <HelpTOCNode Id="470037c0-c052-4659-9193-6e533a3a2ac3" Title="Dispose Method " Url="html/0bc97423-9bf1-3536-b95f-d09f4f5df020.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/0a65896c-58b8-e514-8a90-a2a79dbd6a36.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="LoadingThead Method " Url="html/3c64b8d4-9765-879e-980c-519c93f913f4.htm" />
+        <HelpTOCNode Title="SetProgress Method " Url="html/17193842-b8dd-cf3d-297d-26aee2d16a84.htm" />
+        <HelpTOCNode Title="SetText Method " Url="html/37828695-f369-c755-82ef-61e0a0ad2658.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PGMExtremeLoader Properties" Url="html/dde3d1a5-df7d-42b5-7372-f77d8fa6b23e.htm" />
+      <HelpTOCNode Title="PGMExtremeLoader Events" Url="html/8a38c0a8-be01-afbc-075b-e055d6d47f5e.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="PGMExtremeLoader.SetContinueProgram Delegate" Url="html/9d295043-fcf0-4eec-ac35-588da8361aab.htm" />
+    <HelpTOCNode Title="PGMExtremeLoader.SetProgressHandler Delegate" Url="html/6b71f6fa-cd09-956a-d4fe-9ba64e32076a.htm" />
+    <HelpTOCNode Title="PGMExtremeLoader.SetTextHandler Delegate" Url="html/d7544db6-13cb-adc6-5589-6f94f1e90014.htm" />
+    <HelpTOCNode Id="951363aa-a203-44b9-8d34-812054c3305f" Title="PixelUtilities Class" Url="html/fd77bb6f-d29d-bf39-c2b5-17d29c4f3acb.htm">
+      <HelpTOCNode Id="a23e0c37-0714-4082-bd66-79242ef4658a" Title="PixelUtilities Methods" Url="html/adcedc95-d08b-ef0d-3d73-5c6004b406f6.htm">
+        <HelpTOCNode Title="DrawSquare Method " Url="html/5b153402-9598-2e22-fccd-0f11402070cb.htm" />
+        <HelpTOCNode Title="GetPixel Method " Url="html/d1951d84-6d6d-4b51-a57c-be3ce8903e02.htm" />
+        <HelpTOCNode Title="SetPixel Method " Url="html/91720a61-a3e6-bdb8-73d6-2efdd7509abb.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="dab79d90-09c6-4f55-ba24-6220e5860ca1" Title="Vector2 Class" Url="html/681a8c48-35e1-8e8c-abbb-2a14375a542f.htm">
+      <HelpTOCNode Id="73e6d018-e7d4-4b3a-961c-86d9a020a460" Title="Vector2 Constructor " Url="html/84a0f96e-3f12-707a-ada8-3bb825125894.htm">
+        <HelpTOCNode Title="Vector2 Constructor " Url="html/3ae8cba1-6fd4-74d2-6c64-b655d49f7fce.htm" />
+        <HelpTOCNode Title="Vector2 Constructor (Vector2)" Url="html/f05b67d0-ecc7-3c8d-4132-577c7471d942.htm" />
+        <HelpTOCNode Title="Vector2 Constructor (Int32, Int32)" Url="html/a1561194-f3d1-d092-57e5-159f42e8ac29.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0a73409e-a901-45e7-af09-936490818fe9" Title="Vector2 Fields" Url="html/f4f6ff04-7025-9a05-2968-c1c4b6ecb904.htm">
+        <HelpTOCNode Title="X Field" Url="html/bde793a9-5437-ca19-d464-6d586e274ec9.htm" />
+        <HelpTOCNode Title="Y Field" Url="html/00aa1c9d-9d3e-76e4-c728-39ce9b40a041.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4f1c430a-8c62-473c-9675-a774a0d23dde" Title="Vector2 Methods" Url="html/5430e441-c841-f713-f593-4afc946f6340.htm">
+        <HelpTOCNode Title="GetX Method " Url="html/c35eea1e-6c07-a565-f4c4-fcd8624d8ace.htm" />
+        <HelpTOCNode Title="GetY Method " Url="html/108ce87d-149a-1cef-7770-5f3e3fa9f27c.htm" />
+        <HelpTOCNode Title="SetPos Method " Url="html/b6b9233f-39bc-2423-d1ac-7297486a8d1e.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/5ac7e68e-e0c1-505c-d1ce-6b53ba48a82c.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

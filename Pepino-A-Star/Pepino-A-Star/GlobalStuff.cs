@@ -5,8 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Pepino_A_Star
 {
+    /// <summary>
+    /// @author Eduardo Fernandes nº12927
+    /// @author Damien Fialho nº11243
+    /// 
+    /// @date 06/06/1024
+    /// @code https://code.google.com/p/eda1314-11243-12927/
+    /// 
+    /// Global Variables to store data.
+    /// </summary>
+    /// 
     public static class GlobalStuff
     {
 
@@ -18,6 +29,8 @@ namespace Pepino_A_Star
 
         public static Bitmap _OriginalImage;
         public static Bitmap _OverlayImage;
+
+        public static List<string> _mediaExperimental;
 
         public static int Width;
         public static int Height;
