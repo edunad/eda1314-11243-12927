@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AddChartPoint method" Url="html/870be6cd-9323-3b22-3e57-97728abd3f99.htm" />
+  <HelpKINode Title="AddNodeInfo method" Url="html/35a8bd43-7527-2c7c-4b07-815034a518a8.htm" />
+  <HelpKINode Title="AnimPos field">
+    <HelpKINode Title="PathSettings.AnimPos Field" Url="html/035c8058-521a-af48-a263-ca3a20e74cd6.htm" />
+    <HelpKINode Title="PathTime.AnimPos Field" Url="html/4cbfa8f6-a326-503c-ba47-67e48661ecab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AStarPathFinder class">
+    <HelpKINode Title="AStarPathFinder Class" Url="html/e2415511-c1a4-e1c4-e02f-da4c45c7512f.htm" />
+    <HelpKINode Title="about AStarPathFinder class" Url="html/e2415511-c1a4-e1c4-e02f-da4c45c7512f.htm" />
+    <HelpKINode Title="methods" Url="html/45e5e195-10d0-fb1e-2021-fb2d1959f908.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AStarPathFinder.CalculateCost method" Url="html/b1759721-273c-2440-de71-2ad574fc1a8c.htm" />
+  <HelpKINode Title="AStarPathFinder.CreateNeighbors method" Url="html/dc8007dc-2fcf-3bb3-6d95-fe86649f66b5.htm" />
+  <HelpKINode Title="AStarPathFinder.Euclidean method" Url="html/214e688d-f6cc-f5ce-ef3a-4e5cfceeb7a7.htm" />
+  <HelpKINode Title="AStarPathFinder.FindPath method" Url="html/331c7c85-ddfe-0e9b-dce2-357fddf87085.htm" />
+  <HelpKINode Title="AStarPathFinder.Get1DVector method" Url="html/504e4031-9e5c-a242-f6bb-72e369aa5ebd.htm" />
+  <HelpKINode Title="AStarPathFinder.GetMinTotal method" Url="html/468cd3a0-6e67-5e5d-f78f-b3a2e6ab0eee.htm" />
+  <HelpKINode Title="AStarPathFinder.GetPGMData method" Url="html/5813f90d-f566-48ce-eb92-0fc2542131e1.htm" />
+  <HelpKINode Title="AStarPathFinder.IsOutsidePicture method" Url="html/130de0f6-668e-1c77-8200-a0eb5c81aea4.htm" />
+  <HelpKINode Title="AStarPathFinder.ManhattenH method" Url="html/9e02bbaf-fea7-79f8-1a1e-3969545d0ca1.htm" />
+  <HelpKINode Title="CalcTotal method" Url="html/74e7924e-5b52-e0c9-42df-358e6fb07fc7.htm" />
+  <HelpKINode Title="CalculateCost method" Url="html/b1759721-273c-2440-de71-2ad574fc1a8c.htm" />
+  <HelpKINode Title="CHeurisitc field" Url="html/3bf879b5-8c96-4fe7-fe5a-e00267d8edf0.htm" />
+  <HelpKINode Title="ClearNodeList method" Url="html/c4d08124-7568-e364-3437-4afcaa3ad318.htm" />
+  <HelpKINode Title="ContinueProgram method" Url="html/67b9b5fc-879b-0778-2c8e-b67e4e9abaa4.htm" />
+  <HelpKINode Title="CreateNeighbors method" Url="html/dc8007dc-2fcf-3bb3-6d95-fe86649f66b5.htm" />
+  <HelpKINode Title="Dispose method">
+    <HelpKINode Title="PathFinderMenu.Dispose Method " Url="html/e8aeab8b-2646-c0cc-473d-e2d59e317166.htm" />
+    <HelpKINode Title="PathSettings.Dispose Method " Url="html/83e26a98-bee8-f8f5-476d-fa4357e62b4b.htm" />
+    <HelpKINode Title="PathTime.Dispose Method " Url="html/bfdd86b3-0167-8e5f-b7fe-44ed8f650cc2.htm" />
+    <HelpKINode Title="PGMExtremeLoader.Dispose Method " Url="html/0bc97423-9bf1-3536-b95f-d09f4f5df020.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DoHideAnimation method">
+    <HelpKINode Title="PathSettings.DoHideAnimation Method " Url="html/cc4365e2-6765-2651-b302-2d1b08d7a5eb.htm" />
+    <HelpKINode Title="PathTime.DoHideAnimation Method " Url="html/19e6b9d4-b201-f300-0f4d-3222866060a4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DoShowAnimation method">
+    <HelpKINode Title="PathSettings.DoShowAnimation Method " Url="html/0fc2317a-01b1-0fb8-a0fe-2adb9afc7848.htm" />
+    <HelpKINode Title="PathTime.DoShowAnimation Method " Url="html/b832264c-59b5-e0d0-1ea3-f1b77a2805c5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DrawSquare method" Url="html/5b153402-9598-2e22-fccd-0f11402070cb.htm" />
+  <HelpKINode Title="Euclidean method" Url="html/214e688d-f6cc-f5ce-ef3a-4e5cfceeb7a7.htm" />
+  <HelpKINode Title="FindPath method">
+    <HelpKINode Title="AStarPathFinder.FindPath Method " Url="html/331c7c85-ddfe-0e9b-dce2-357fddf87085.htm" />
+    <HelpKINode Title="PathFinderMenu.FindPath Method " Url="html/bc0dd0c0-4f77-6f93-f237-41066d760170.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Get1DVector method" Url="html/504e4031-9e5c-a242-f6bb-72e369aa5ebd.htm" />
+  <HelpKINode Title="GetMinTotal method" Url="html/468cd3a0-6e67-5e5d-f78f-b3a2e6ab0eee.htm" />
+  <HelpKINode Title="GetPGMData method" Url="html/5813f90d-f566-48ce-eb92-0fc2542131e1.htm" />
+  <HelpKINode Title="GetPixel method" Url="html/d1951d84-6d6d-4b51-a57c-be3ce8903e02.htm" />
+  <HelpKINode Title="GetX method" Url="html/c35eea1e-6c07-a565-f4c4-fcd8624d8ace.htm" />
+  <HelpKINode Title="GetY method" Url="html/108ce87d-149a-1cef-7770-5f3e3fa9f27c.htm" />
+  <HelpKINode Title="GlobalStuff class">
+    <HelpKINode Title="GlobalStuff Class" Url="html/ccfb9fca-1658-50a4-adab-e32bb7bc3d20.htm" />
+    <HelpKINode Title="about GlobalStuff class" Url="html/ccfb9fca-1658-50a4-adab-e32bb7bc3d20.htm" />
+    <HelpKINode Title="fields" Url="html/a18c962e-932a-71a0-2ecf-76698aacaa04.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GlobalStuff.Height field" Url="html/47c9b4c5-7f5a-d3c0-038f-fc5e9588e015.htm" />
+  <HelpKINode Title="GlobalStuff.IsImageLoaded field" Url="html/67343ced-05fe-2a6b-f80a-f35e662a8b79.htm" />
+  <HelpKINode Title="GlobalStuff.Width field" Url="html/b339fa41-f00f-74a8-4389-98bbeecc3c6b.htm" />
+  <HelpKINode Title="GlobalStuff._drawNeigbor field" Url="html/588b2635-1ed5-a7ec-d256-114615eb9f17.htm" />
+  <HelpKINode Title="GlobalStuff._heuristicMODE field" Url="html/6fd1d2d8-aa05-4561-3076-e77bc0afbb6a.htm" />
+  <HelpKINode Title="GlobalStuff._loadMenu field" Url="html/392135b5-0525-b775-10c2-3b2eae5b6192.htm" />
+  <HelpKINode Title="GlobalStuff._mediaExperimental field" Url="html/a3b7a8cc-a5fa-5086-3f32-88cf0786e662.htm" />
+  <HelpKINode Title="GlobalStuff._OriginalImage field" Url="html/378d8079-b06f-9f53-de43-4b419ff2bffe.htm" />
+  <HelpKINode Title="GlobalStuff._OverlayImage field" Url="html/74782eae-fc7d-3ece-48aa-5fad49b07ec7.htm" />
+  <HelpKINode Title="GlobalStuff._panelSettings field" Url="html/0753588a-ee14-73cf-b83a-ae60e5586991.htm" />
+  <HelpKINode Title="GlobalStuff._pathColor field" Url="html/09328526-90bf-4228-1efb-2752214fddea.htm" />
+  <HelpKINode Title="GlobalStuff._pathMenu field" Url="html/031ec33b-d370-d262-9aa0-0f7ecbb1ae5b.htm" />
+  <HelpKINode Title="GlobalStuff._pgmData field" Url="html/12ed3a0a-c001-7128-3cb2-fbd45dad352c.htm" />
+  <HelpKINode Title="GlobalStuff._timeMenu field" Url="html/2c601d59-1e25-f9f1-693d-7de5b69f4481.htm" />
+  <HelpKINode Title="Height field" Url="html/47c9b4c5-7f5a-d3c0-038f-fc5e9588e015.htm" />
+  <HelpKINode Title="IsImageLoaded field" Url="html/67343ced-05fe-2a6b-f80a-f35e662a8b79.htm" />
+  <HelpKINode Title="IsOutsidePicture method" Url="html/130de0f6-668e-1c77-8200-a0eb5c81aea4.htm" />
+  <HelpKINode Title="ListNodeTime field" Url="html/49d5b337-fbf3-1ac8-effa-dad10d5698dc.htm" />
+  <HelpKINode Title="LoadingThead method" Url="html/3c64b8d4-9765-879e-980c-519c93f913f4.htm" />
+  <HelpKINode Title="ManhattenH method" Url="html/9e02bbaf-fea7-79f8-1a1e-3969545d0ca1.htm" />
+  <HelpKINode Title="Node class">
+    <HelpKINode Title="Node Class" Url="html/142a3559-52a7-e42e-378c-1585cbb817fb.htm" />
+    <HelpKINode Title="about Node class" Url="html/142a3559-52a7-e42e-378c-1585cbb817fb.htm" />
+    <HelpKINode Title="constructor" Url="html/ed0e7231-fd59-f67f-b7ea-9892487b1794.htm" />
+    <HelpKINode Title="fields" Url="html/9b925e90-df4d-c39f-0b4b-90ce5fcbffeb.htm" />
+    <HelpKINode Title="methods" Url="html/6bdb8d46-b0a0-42cf-d23d-21bbcb1d46aa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Node.CalcTotal method" Url="html/74e7924e-5b52-e0c9-42df-358e6fb07fc7.htm" />
+  <HelpKINode Title="Node.Node constructor" Url="html/ed0e7231-fd59-f67f-b7ea-9892487b1794.htm" />
+  <HelpKINode Title="Node._cost field" Url="html/ce22cda4-c216-82e7-8281-a4294c004bfa.htm" />
+  <HelpKINode Title="Node._heuristic field" Url="html/2d691677-88e8-b0d9-eac6-308abd7e81e2.htm" />
+  <HelpKINode Title="Node._neightbors field" Url="html/0f8c5d98-b1b4-5ed4-2c7b-3baaac657c08.htm" />
+  <HelpKINode Title="Node._parent field" Url="html/27be7ee3-5eb5-ea34-e2ac-ba57ab62ff0e.htm" />
+  <HelpKINode Title="Node._pos field" Url="html/c612a213-15f8-a0ea-0781-36b821d865e5.htm" />
+  <HelpKINode Title="Node._total field" Url="html/018df791-2027-98b4-ddd1-b3545281a4f7.htm" />
+  <HelpKINode Title="PathFinderMenu class">
+    <HelpKINode Title="PathFinderMenu Class" Url="html/e00b6c97-970d-f6a9-3df8-d3a527f348a3.htm" />
+    <HelpKINode Title="about PathFinderMenu class" Url="html/e00b6c97-970d-f6a9-3df8-d3a527f348a3.htm" />
+    <HelpKINode Title="constructor" Url="html/d2a9ee38-a69f-3e33-adc9-4a3fee4631f2.htm" />
+    <HelpKINode Title="events" Url="html/135c59cd-1171-874f-67e5-78d25716472f.htm" />
+    <HelpKINode Title="fields" Url="html/63f7d0ef-435d-5150-7ad9-d266ab7650a4.htm" />
+    <HelpKINode Title="methods" Url="html/336cf9eb-7723-ef73-1cc6-d732ce156ae4.htm" />
+    <HelpKINode Title="properties" Url="html/53f7f7d6-250e-2dc8-ae51-4af402ce6cae.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PathFinderMenu.Dispose method" Url="html/e8aeab8b-2646-c0cc-473d-e2d59e317166.htm" />
+  <HelpKINode Title="PathFinderMenu.FindPath method" Url="html/bc0dd0c0-4f77-6f93-f237-41066d760170.htm" />
+  <HelpKINode Title="PathFinderMenu.FinishPath delegate" Url="html/3b9eab3f-68cf-2315-7e45-ff7651f9e984.htm" />
+  <HelpKINode Title="PathFinderMenu.PathFinderMenu constructor" Url="html/d2a9ee38-a69f-3e33-adc9-4a3fee4631f2.htm" />
+  <HelpKINode Title="PathFinderMenu.SetImageHandler delegate" Url="html/932df33b-11c3-dd09-44ed-150001170a09.htm" />
+  <HelpKINode Title="PathFinderMenu.SetImagePreview method" Url="html/30e0aebf-bfcc-d9b8-e1e5-8aa6b55b59ff.htm" />
+  <HelpKINode Title="PathFinderMenu.SetPathFinished method" Url="html/857769e2-901b-a553-cf46-59bd1176f2be.htm" />
+  <HelpKINode Title="PathFinderMenu.SetText method" Url="html/1c046957-1876-2d67-6581-35adf7b0c66b.htm" />
+  <HelpKINode Title="PathFinderMenu.SetTextHandler delegate" Url="html/06fc59f6-2757-e278-40be-77dee4f38cfa.htm" />
+  <HelpKINode Title="PathFinderMenu.ToggleClock field" Url="html/8974dcfb-893a-ae0f-1560-0418561d9d9b.htm" />
+  <HelpKINode Title="PathFinderMenu.ToggleMenu field" Url="html/3799ccf6-d702-5931-dd8d-2d3337b694af.htm" />
+  <HelpKINode Title="PathFinderMenu._PathfinderThrd field" Url="html/ecc5dd4c-28e7-5f00-4a02-0edd784f737a.htm" />
+  <HelpKINode Title="PathSettings class">
+    <HelpKINode Title="PathSettings Class" Url="html/32df7f1e-1372-7297-ae0e-b2f48b33a023.htm" />
+    <HelpKINode Title="about PathSettings class" Url="html/32df7f1e-1372-7297-ae0e-b2f48b33a023.htm" />
+    <HelpKINode Title="constructor" Url="html/a6e568a8-690a-12ec-dc83-433b4946c5cf.htm" />
+    <HelpKINode Title="events" Url="html/44db2802-f54a-b1e5-9295-8c6ee66bcb96.htm" />
+    <HelpKINode Title="fields" Url="html/a159341b-f9f2-227f-0db0-133c38f358b2.htm" />
+    <HelpKINode Title="methods" Url="html/9473a87c-8788-ce1f-1dce-7c714703146d.htm" />
+    <HelpKINode Title="properties" Url="html/8e4e76ff-0b4b-f336-d4d8-7620f44e7ab3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PathSettings.AnimPos field" Url="html/035c8058-521a-af48-a263-ca3a20e74cd6.htm" />
+  <HelpKINode Title="PathSettings.CHeurisitc field" Url="html/3bf879b5-8c96-4fe7-fe5a-e00267d8edf0.htm" />
+  <HelpKINode Title="PathSettings.Dispose method" Url="html/83e26a98-bee8-f8f5-476d-fa4357e62b4b.htm" />
+  <HelpKINode Title="PathSettings.DoHideAnimation method" Url="html/cc4365e2-6765-2651-b302-2d1b08d7a5eb.htm" />
+  <HelpKINode Title="PathSettings.DoShowAnimation method" Url="html/0fc2317a-01b1-0fb8-a0fe-2adb9afc7848.htm" />
+  <HelpKINode Title="PathSettings.PathSettings constructor" Url="html/a6e568a8-690a-12ec-dc83-433b4946c5cf.htm" />
+  <HelpKINode Title="PathSettings.TXEnd field" Url="html/b389acc9-f026-683b-56a4-0b114cb1ec94.htm" />
+  <HelpKINode Title="PathSettings.TXStart field" Url="html/357564b5-76db-7634-5837-6c273f774e83.htm" />
+  <HelpKINode Title="PathSettings.TYEnd field" Url="html/c4f45c7e-0522-a41f-44ab-e4b4addfbafe.htm" />
+  <HelpKINode Title="PathSettings.TYStart field" Url="html/c192a805-3472-241f-f570-51c1efaf713c.htm" />
+  <HelpKINode Title="PathTime class">
+    <HelpKINode Title="PathTime Class" Url="html/1adedf2d-4c86-3305-2654-3d4ee4d605fd.htm" />
+    <HelpKINode Title="about PathTime class" Url="html/1adedf2d-4c86-3305-2654-3d4ee4d605fd.htm" />
+    <HelpKINode Title="constructor" Url="html/9471e7f0-57c7-9bf7-e948-ab979d209102.htm" />
+    <HelpKINode Title="events" Url="html/075b3e72-7b45-905e-fc26-149d49ddf2cd.htm" />
+    <HelpKINode Title="fields" Url="html/5012db11-5f43-3dd0-6e57-866bd9c5a75a.htm" />
+    <HelpKINode Title="methods" Url="html/b146fe7c-5d57-50db-3b4f-6bb4e7bae1e5.htm" />
+    <HelpKINode Title="properties" Url="html/3e2ed65c-ba80-ac43-a4b5-5b51e74ba439.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PathTime.AddChartPoint method" Url="html/870be6cd-9323-3b22-3e57-97728abd3f99.htm" />
+  <HelpKINode Title="PathTime.AddNodeInfo method" Url="html/35a8bd43-7527-2c7c-4b07-815034a518a8.htm" />
+  <HelpKINode Title="PathTime.AddNodeList delegate" Url="html/7b0d498f-8246-18c5-1a50-97af4dbf3c59.htm" />
+  <HelpKINode Title="PathTime.AddTimeChart delegate" Url="html/350378bd-3d24-5035-8758-a2d4250d3b70.htm" />
+  <HelpKINode Title="PathTime.AnimPos field" Url="html/4cbfa8f6-a326-503c-ba47-67e48661ecab.htm" />
+  <HelpKINode Title="PathTime.ClearList delegate" Url="html/2ce633a4-2d22-088a-8698-3d60072f5b3a.htm" />
+  <HelpKINode Title="PathTime.ClearNodeList method" Url="html/c4d08124-7568-e364-3437-4afcaa3ad318.htm" />
+  <HelpKINode Title="PathTime.Dispose method" Url="html/bfdd86b3-0167-8e5f-b7fe-44ed8f650cc2.htm" />
+  <HelpKINode Title="PathTime.DoHideAnimation method" Url="html/19e6b9d4-b201-f300-0f4d-3222866060a4.htm" />
+  <HelpKINode Title="PathTime.DoShowAnimation method" Url="html/b832264c-59b5-e0d0-1ea3-f1b77a2805c5.htm" />
+  <HelpKINode Title="PathTime.ListNodeTime field" Url="html/49d5b337-fbf3-1ac8-effa-dad10d5698dc.htm" />
+  <HelpKINode Title="PathTime.PathTime constructor" Url="html/9471e7f0-57c7-9bf7-e948-ab979d209102.htm" />
+  <HelpKINode Title="Pepino_A_Star namespace" Url="html/914dd8fb-2b3b-49bd-69c0-8f0390a34c19.htm" />
+  <HelpKINode Title="Pepino_A_Star.AStarPathFinder class" Url="html/e2415511-c1a4-e1c4-e02f-da4c45c7512f.htm" />
+  <HelpKINode Title="Pepino_A_Star.GlobalStuff class" Url="html/ccfb9fca-1658-50a4-adab-e32bb7bc3d20.htm" />
+  <HelpKINode Title="Pepino_A_Star.Node class" Url="html/142a3559-52a7-e42e-378c-1585cbb817fb.htm" />
+  <HelpKINode Title="Pepino_A_Star.PathFinderMenu class" Url="html/e00b6c97-970d-f6a9-3df8-d3a527f348a3.htm" />
+  <HelpKINode Title="Pepino_A_Star.PathFinderMenu.FinishPath delegate" Url="html/3b9eab3f-68cf-2315-7e45-ff7651f9e984.htm" />
+  <HelpKINode Title="Pepino_A_Star.PathFinderMenu.SetImageHandler delegate" Url="html/932df33b-11c3-dd09-44ed-150001170a09.htm" />
+  <HelpKINode Title="Pepino_A_Star.PathFinderMenu.SetTextHandler delegate" Url="html/06fc59f6-2757-e278-40be-77dee4f38cfa.htm" />
+  <HelpKINode Title="Pepino_A_Star.PathSettings class" Url="html/32df7f1e-1372-7297-ae0e-b2f48b33a023.htm" />
+  <HelpKINode Title="Pepino_A_Star.PathTime class" Url="html/1adedf2d-4c86-3305-2654-3d4ee4d605fd.htm" />
+  <HelpKINode Title="Pepino_A_Star.PathTime.AddNodeList delegate" Url="html/7b0d498f-8246-18c5-1a50-97af4dbf3c59.htm" />
+  <HelpKINode Title="Pepino_A_Star.PathTime.AddTimeChart delegate" Url="html/350378bd-3d24-5035-8758-a2d4250d3b70.htm" />
+  <HelpKINode Title="Pepino_A_Star.PathTime.ClearList delegate" Url="html/2ce633a4-2d22-088a-8698-3d60072f5b3a.htm" />
+  <HelpKINode Title="Pepino_A_Star.PGMExtremeLoader class" Url="html/37f91b66-c11c-1f3a-8b02-984f14090dc5.htm" />
+  <HelpKINode Title="Pepino_A_Star.PGMExtremeLoader.SetContinueProgram delegate" Url="html/9d295043-fcf0-4eec-ac35-588da8361aab.htm" />
+  <HelpKINode Title="Pepino_A_Star.PGMExtremeLoader.SetProgressHandler delegate" Url="html/6b71f6fa-cd09-956a-d4fe-9ba64e32076a.htm" />
+  <HelpKINode Title="Pepino_A_Star.PGMExtremeLoader.SetTextHandler delegate" Url="html/d7544db6-13cb-adc6-5589-6f94f1e90014.htm" />
+  <HelpKINode Title="Pepino_A_Star.PixelUtilities class" Url="html/fd77bb6f-d29d-bf39-c2b5-17d29c4f3acb.htm" />
+  <HelpKINode Title="Pepino_A_Star.Vector2 class" Url="html/681a8c48-35e1-8e8c-abbb-2a14375a542f.htm" />
+  <HelpKINode Title="PGMExtremeLoader class">
+    <HelpKINode Title="PGMExtremeLoader Class" Url="html/37f91b66-c11c-1f3a-8b02-984f14090dc5.htm" />
+    <HelpKINode Title="about PGMExtremeLoader class" Url="html/37f91b66-c11c-1f3a-8b02-984f14090dc5.htm" />
+    <HelpKINode Title="constructor" Url="html/8c36de3d-d23f-ac07-8376-c9db135a14d6.htm" />
+    <HelpKINode Title="events" Url="html/8a38c0a8-be01-afbc-075b-e055d6d47f5e.htm" />
+    <HelpKINode Title="fields" Url="html/69d30fe7-7b62-69ae-f61a-c4a4d74ec6b8.htm" />
+    <HelpKINode Title="methods" Url="html/e1eca09a-3126-3e46-ac3d-4a8c44c660af.htm" />
+    <HelpKINode Title="properties" Url="html/dde3d1a5-df7d-42b5-7372-f77d8fa6b23e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PGMExtremeLoader.ContinueProgram method" Url="html/67b9b5fc-879b-0778-2c8e-b67e4e9abaa4.htm" />
+  <HelpKINode Title="PGMExtremeLoader.Dispose method" Url="html/0bc97423-9bf1-3536-b95f-d09f4f5df020.htm" />
+  <HelpKINode Title="PGMExtremeLoader.LoadingThead method" Url="html/3c64b8d4-9765-879e-980c-519c93f913f4.htm" />
+  <HelpKINode Title="PGMExtremeLoader.PGMExtremeLoader constructor" Url="html/8c36de3d-d23f-ac07-8376-c9db135a14d6.htm" />
+  <HelpKINode Title="PGMExtremeLoader.SetContinueProgram delegate" Url="html/9d295043-fcf0-4eec-ac35-588da8361aab.htm" />
+  <HelpKINode Title="PGMExtremeLoader.SetProgress method" Url="html/17193842-b8dd-cf3d-297d-26aee2d16a84.htm" />
+  <HelpKINode Title="PGMExtremeLoader.SetProgressHandler delegate" Url="html/6b71f6fa-cd09-956a-d4fe-9ba64e32076a.htm" />
+  <HelpKINode Title="PGMExtremeLoader.SetText method" Url="html/37828695-f369-c755-82ef-61e0a0ad2658.htm" />
+  <HelpKINode Title="PGMExtremeLoader.SetTextHandler delegate" Url="html/d7544db6-13cb-adc6-5589-6f94f1e90014.htm" />
+  <HelpKINode Title="PGMExtremeLoader._loadThread field" Url="html/2c1d9133-f354-91d9-2003-ebb0966ba8bc.htm" />
+  <HelpKINode Title="PixelUtilities class">
+    <HelpKINode Title="PixelUtilities Class" Url="html/fd77bb6f-d29d-bf39-c2b5-17d29c4f3acb.htm" />
+    <HelpKINode Title="about PixelUtilities class" Url="html/fd77bb6f-d29d-bf39-c2b5-17d29c4f3acb.htm" />
+    <HelpKINode Title="methods" Url="html/adcedc95-d08b-ef0d-3d73-5c6004b406f6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PixelUtilities.DrawSquare method" Url="html/5b153402-9598-2e22-fccd-0f11402070cb.htm" />
+  <HelpKINode Title="PixelUtilities.GetPixel method" Url="html/d1951d84-6d6d-4b51-a57c-be3ce8903e02.htm" />
+  <HelpKINode Title="PixelUtilities.SetPixel method" Url="html/91720a61-a3e6-bdb8-73d6-2efdd7509abb.htm" />
+  <HelpKINode Title="SetImagePreview method" Url="html/30e0aebf-bfcc-d9b8-e1e5-8aa6b55b59ff.htm" />
+  <HelpKINode Title="SetPathFinished method" Url="html/857769e2-901b-a553-cf46-59bd1176f2be.htm" />
+  <HelpKINode Title="SetPixel method" Url="html/91720a61-a3e6-bdb8-73d6-2efdd7509abb.htm" />
+  <HelpKINode Title="SetPos method" Url="html/b6b9233f-39bc-2423-d1ac-7297486a8d1e.htm" />
+  <HelpKINode Title="SetProgress method" Url="html/17193842-b8dd-cf3d-297d-26aee2d16a84.htm" />
+  <HelpKINode Title="SetText method">
+    <HelpKINode Title="PathFinderMenu.SetText Method " Url="html/1c046957-1876-2d67-6581-35adf7b0c66b.htm" />
+    <HelpKINode Title="PGMExtremeLoader.SetText Method " Url="html/37828695-f369-c755-82ef-61e0a0ad2658.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ToggleClock field" Url="html/8974dcfb-893a-ae0f-1560-0418561d9d9b.htm" />
+  <HelpKINode Title="ToggleMenu field" Url="html/3799ccf6-d702-5931-dd8d-2d3337b694af.htm" />
+  <HelpKINode Title="ToString method" Url="html/5ac7e68e-e0c1-505c-d1ce-6b53ba48a82c.htm" />
+  <HelpKINode Title="TXEnd field" Url="html/b389acc9-f026-683b-56a4-0b114cb1ec94.htm" />
+  <HelpKINode Title="TXStart field" Url="html/357564b5-76db-7634-5837-6c273f774e83.htm" />
+  <HelpKINode Title="TYEnd field" Url="html/c4f45c7e-0522-a41f-44ab-e4b4addfbafe.htm" />
+  <HelpKINode Title="TYStart field" Url="html/c192a805-3472-241f-f570-51c1efaf713c.htm" />
+  <HelpKINode Title="Vector2 class">
+    <HelpKINode Title="Vector2 Class" Url="html/681a8c48-35e1-8e8c-abbb-2a14375a542f.htm" />
+    <HelpKINode Title="about Vector2 class" Url="html/681a8c48-35e1-8e8c-abbb-2a14375a542f.htm" />
+    <HelpKINode Title="constructor" Url="html/84a0f96e-3f12-707a-ada8-3bb825125894.htm" />
+    <HelpKINode Title="fields" Url="html/f4f6ff04-7025-9a05-2968-c1c4b6ecb904.htm" />
+    <HelpKINode Title="methods" Url="html/5430e441-c841-f713-f593-4afc946f6340.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Vector2.GetX method" Url="html/c35eea1e-6c07-a565-f4c4-fcd8624d8ace.htm" />
+  <HelpKINode Title="Vector2.GetY method" Url="html/108ce87d-149a-1cef-7770-5f3e3fa9f27c.htm" />
+  <HelpKINode Title="Vector2.SetPos method" Url="html/b6b9233f-39bc-2423-d1ac-7297486a8d1e.htm" />
+  <HelpKINode Title="Vector2.ToString method" Url="html/5ac7e68e-e0c1-505c-d1ce-6b53ba48a82c.htm" />
+  <HelpKINode Title="Vector2.Vector2 constructor" Url="html/84a0f96e-3f12-707a-ada8-3bb825125894.htm" />
+  <HelpKINode Title="Vector2.X field" Url="html/bde793a9-5437-ca19-d464-6d586e274ec9.htm" />
+  <HelpKINode Title="Vector2.Y field" Url="html/00aa1c9d-9d3e-76e4-c728-39ce9b40a041.htm" />
+  <HelpKINode Title="Width field" Url="html/b339fa41-f00f-74a8-4389-98bbeecc3c6b.htm" />
+  <HelpKINode Title="X field" Url="html/bde793a9-5437-ca19-d464-6d586e274ec9.htm" />
+  <HelpKINode Title="Y field" Url="html/00aa1c9d-9d3e-76e4-c728-39ce9b40a041.htm" />
+  <HelpKINode Title="_cost field" Url="html/ce22cda4-c216-82e7-8281-a4294c004bfa.htm" />
+  <HelpKINode Title="_drawNeigbor field" Url="html/588b2635-1ed5-a7ec-d256-114615eb9f17.htm" />
+  <HelpKINode Title="_heuristic field" Url="html/2d691677-88e8-b0d9-eac6-308abd7e81e2.htm" />
+  <HelpKINode Title="_heuristicMODE field" Url="html/6fd1d2d8-aa05-4561-3076-e77bc0afbb6a.htm" />
+  <HelpKINode Title="_loadMenu field" Url="html/392135b5-0525-b775-10c2-3b2eae5b6192.htm" />
+  <HelpKINode Title="_loadThread field" Url="html/2c1d9133-f354-91d9-2003-ebb0966ba8bc.htm" />
+  <HelpKINode Title="_mediaExperimental field" Url="html/a3b7a8cc-a5fa-5086-3f32-88cf0786e662.htm" />
+  <HelpKINode Title="_neightbors field" Url="html/0f8c5d98-b1b4-5ed4-2c7b-3baaac657c08.htm" />
+  <HelpKINode Title="_OriginalImage field" Url="html/378d8079-b06f-9f53-de43-4b419ff2bffe.htm" />
+  <HelpKINode Title="_OverlayImage field" Url="html/74782eae-fc7d-3ece-48aa-5fad49b07ec7.htm" />
+  <HelpKINode Title="_panelSettings field" Url="html/0753588a-ee14-73cf-b83a-ae60e5586991.htm" />
+  <HelpKINode Title="_parent field" Url="html/27be7ee3-5eb5-ea34-e2ac-ba57ab62ff0e.htm" />
+  <HelpKINode Title="_pathColor field" Url="html/09328526-90bf-4228-1efb-2752214fddea.htm" />
+  <HelpKINode Title="_PathfinderThrd field" Url="html/ecc5dd4c-28e7-5f00-4a02-0edd784f737a.htm" />
+  <HelpKINode Title="_pathMenu field" Url="html/031ec33b-d370-d262-9aa0-0f7ecbb1ae5b.htm" />
+  <HelpKINode Title="_pgmData field" Url="html/12ed3a0a-c001-7128-3cb2-fbd45dad352c.htm" />
+  <HelpKINode Title="_pos field" Url="html/c612a213-15f8-a0ea-0781-36b821d865e5.htm" />
+  <HelpKINode Title="_timeMenu field" Url="html/2c601d59-1e25-f9f1-693d-7de5b69f4481.htm" />
+  <HelpKINode Title="_total field" Url="html/018df791-2027-98b4-ddd1-b3545281a4f7.htm" />
+</HelpKI>

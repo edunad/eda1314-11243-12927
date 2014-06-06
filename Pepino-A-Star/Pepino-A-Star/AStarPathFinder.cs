@@ -4,11 +4,15 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+
 
 namespace Pepino_A_Star
 {
-
+    /// <summary>
+    /// The Node Class
+    /// </summary>
     public class Node
     {
         public double _cost;
@@ -20,8 +24,11 @@ namespace Pepino_A_Star
         public List<Node> _neightbors;
 
         public Node _parent;
-        public double Time;
 
+        /// <summary>
+        /// Node Constructor
+        /// </summary>
+        /// <param name="pos">Node Position</param>
         public Node(Vector2 pos)
         {
             this._neightbors = new List<Node>();
@@ -30,6 +37,9 @@ namespace Pepino_A_Star
             this._heuristic = 0;
         }
 
+        /// <summary>
+        /// Calculates the Total f()
+        /// </summary>
         public void CalcTotal()
         {
             _total = _cost + _heuristic;
@@ -37,22 +47,45 @@ namespace Pepino_A_Star
 
     }
 
+    /// <summary>
+    /// @author Eduardo Fernandes nº12927
+    /// @author Damien Fialho nº11243
+    /// 
+    /// @date 06/06/1024
+    /// @code https://code.google.com/p/eda1314-11243-12927/
+    /// 
+    /// The Pathfinder Class. Created by us. Inspired by http://theory.stanford.edu/~amitp/GameProgramming/
+    /// </summary>
+    /// 
     public static class AStarPathFinder
     {
 
+        /// <summary>
+        /// Calculates the Cost based on the color given
+        /// </summary>
+        /// <param name="color">The color, from 0 to 255</param>
+        /// <returns></returns>
         public static double CalculateCost(byte color)
         {
            double STEPS = 220;
-           return (double)(255 - STEPS)/ color;
-            //return 1 - (color / 255);
-            //return Math.Abs((color - 80) / (255 - 80));
+           return (double)(255 - STEPS) / color;
         }
 
+        /// <summary>
+        /// Checks if the position is outside the picture.
+        /// </summary>
+        /// <param name="_pos">The Position to check</param>
+        /// <returns></returns>
         public static bool IsOutsidePicture(Vector2 _pos)
         {
             return (_pos.X - 1 < 0 || _pos.Y - 1 < 0 || _pos.Y + 1 > GlobalStuff.Height || _pos.X + 1 > GlobalStuff.Width);
         }
 
+        /// <summary>
+        /// Creates the Nod Neighbors
+        /// </summary>
+        /// <param name="_nod">The Node</param>
+        /// <param name="_finalNode">The End Node</param>
         public static void CreateNeighbors(Node _nod, Node _finalNode)
         {
             _nod._neightbors.Clear();
@@ -85,18 +118,25 @@ namespace Pepino_A_Star
                 }
 
         }
-
-        public static int ClampValue(int max, int min ,int value){
-            if (value > max) return max;
-            if (value < min) return min;
-            return value;
-        }
-
-        public static void FindPath(Node _start, Node _end, Bitmap img)
+        /// <summary>
+        /// Finds the Path between the start node and the end node
+        /// </summary>
+        /// <param name="_start">Start Node</param>
+        /// <param name="_end">End Node</param>
+        /// <param name="Steps">Each Time Step</param>
+        /// <returns>The Average</returns>
+        public static double FindPath(Node _start, Node _end, int Steps)
         {
 
             Dictionary<int, Node> _openList = new Dictionary<int, Node>();
             Dictionary<int, Node> _closedList = new Dictionary<int, Node>();
+            List<double> _nodeTimes = new List<double>();
+
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+
+
+            int Infc = 0;
 
             Node _current = _start;
             _openList[Get1DVector(_start._pos.X, _start._pos.Y)] = _start;
@@ -105,8 +145,6 @@ namespace Pepino_A_Star
             {
                 int X = _current._pos.X;
                 int Y = _current._pos.Y;
-
-                double _startTime = DateTime.Now.Millisecond;
 
                 if (X == _end._pos.X && Y == _end._pos.Y )
                 {
@@ -150,54 +188,56 @@ namespace Pepino_A_Star
                         _openList[INDX] = neigh;
                     }
 
-                    if (GlobalStuff._drawNeigbor)
-                    {
-                        int ColorHer = ClampValue(255, 10, (int)(Math.Abs(neigh._heuristic) * 155));
-                        int ColorVal = ClampValue(255, 10, (int)(Math.Abs(neigh._cost) * 155));
-                        img.SetPixel(neigh._pos.X, neigh._pos.Y, Color.FromArgb(0, ColorVal,ColorHer));
-                        GlobalStuff._pathMenu.SetImagePreview(img);
-                    }
-
                 }
 
-                _current.Time = Math.Abs(DateTime.Now.Millisecond - _startTime);
+                if ((Infc % Steps) + 1 == 1)
+                {   
+                    _nodeTimes.Add((double)stopwatch.ElapsedMilliseconds);
+                }
 
+                Infc++;
             }
 
-            Node tmp = _end;
-            GlobalStuff._timeMenu.ClearNodeList();
+            _nodeTimes.Add((double)stopwatch.ElapsedMilliseconds); // Add the last time.
 
-            double Total = 0;
-            double MaxPt = 0;
+            double totas = 0;
 
-            while (true)
-            {
-                if (tmp._parent == null) break;
-                img.SetPixel(tmp._pos.X, tmp._pos.Y, GlobalStuff._pathColor);
-                GlobalStuff._pathMenu.SetImagePreview(img);
+            foreach (double sad in _nodeTimes)
+                totas += sad;
 
-                GlobalStuff._timeMenu.AddNodeInfo("Node {" + tmp._pos + "} -> Time : " + ((double)(tmp.Time)).ToString() + " - Cost : " + Math.Round(tmp._cost, 3) + " - Heuristic : " + Math.Round(tmp._heuristic, 3));
-                Total += tmp.Time;
-                MaxPt++;
-
-                tmp = tmp._parent;
-            }
-
-            GlobalStuff._timeMenu.SetAverage(((double)(Total / MaxPt)).ToString());
-            GlobalStuff._pathMenu.SetPathFinished();
+            return (totas / Infc);
 
         }
 
+        /// <summary>
+        /// Converts 2D to 1D
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns>The Vector</returns>
+        /// 
         public static int Get1DVector(int x, int y)
         {
             return (y * GlobalStuff.Width + x);
         }
 
+        /// <summary>
+        /// Gets the stored PGM Data
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns>The Color</returns>
         public static byte GetPGMData(int x, int y)
         {
             return (byte)GlobalStuff._pgmData[(y * GlobalStuff.Width + x)];
         }
 
+        /// <summary>
+        /// Manhatten Heuristic
+        /// </summary>
+        /// <param name="_start">Node to Check</param>
+        /// <param name="_end">End Node</param>
+        /// <returns></returns>
         public static double ManhattenH(Node _start, Node _end)
         {
             double dx = Math.Abs(_start._pos.X - _end._pos.X);
@@ -206,6 +246,12 @@ namespace Pepino_A_Star
             return (dx + dy);
         }
 
+        /// <summary>
+        /// Euclidean Heuristic
+        /// </summary>
+        /// <param name="_start">Node to Check</param>
+        /// <param name="_end">End Node</param>
+        /// <returns></returns>
         public static double Euclidean(Node _start, Node _end)
         {
             double dx = Math.Abs(_start._pos.X - _end._pos.X);
@@ -214,7 +260,11 @@ namespace Pepino_A_Star
             return Math.Sqrt(dx * dx + dy * dy);
         }
 
-
+        /// <summary>
+        /// Gets the Min Node total on the List.
+        /// </summary>
+        /// <param name="_list">The List to Check from</param>
+        /// <returns>The Min Node</returns>
         public static Node GetMinTotal(Dictionary<int,Node> _list)
         {
             Node MAX = new Node(new Vector2());

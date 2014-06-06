@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PathFinderMenu));
             this.BFind = new System.Windows.Forms.Button();
             this.BClose = new System.Windows.Forms.Button();
+            this.BTime = new System.Windows.Forms.Button();
             this.BDelete = new System.Windows.Forms.Button();
             this.BSettings = new System.Windows.Forms.Button();
             this.POverlay = new System.Windows.Forms.PictureBox();
@@ -58,10 +60,20 @@
             this.BClose.UseVisualStyleBackColor = true;
             this.BClose.Click += new System.EventHandler(this.BClose_Click);
             // 
+            // BTime
+            // 
+            this.BTime.Image = global::Pepino_A_Star.Properties.Resources.clock;
+            this.BTime.Location = new System.Drawing.Point(497, 36);
+            this.BTime.Name = "BTime";
+            this.BTime.Size = new System.Drawing.Size(26, 24);
+            this.BTime.TabIndex = 13;
+            this.BTime.UseVisualStyleBackColor = true;
+            this.BTime.Click += new System.EventHandler(this.BTime_Click);
+            // 
             // BDelete
             // 
             this.BDelete.Image = global::Pepino_A_Star.Properties.Resources.asterisk_yellow;
-            this.BDelete.Location = new System.Drawing.Point(497, 36);
+            this.BDelete.Location = new System.Drawing.Point(497, 66);
             this.BDelete.Name = "BDelete";
             this.BDelete.Size = new System.Drawing.Size(26, 24);
             this.BDelete.TabIndex = 12;
@@ -86,7 +98,6 @@
             this.POverlay.Size = new System.Drawing.Size(512, 512);
             this.POverlay.TabIndex = 4;
             this.POverlay.TabStop = false;
-            this.POverlay.Click += new System.EventHandler(this.POverlay_Click);
             // 
             // PImage
             // 
@@ -102,12 +113,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(536, 558);
+            this.Controls.Add(this.BTime);
             this.Controls.Add(this.BDelete);
             this.Controls.Add(this.BSettings);
             this.Controls.Add(this.POverlay);
             this.Controls.Add(this.BClose);
             this.Controls.Add(this.BFind);
             this.Controls.Add(this.PImage);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "PathFinderMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -128,6 +141,7 @@
         private System.Windows.Forms.PictureBox POverlay;
         private System.Windows.Forms.Button BSettings;
         private System.Windows.Forms.Button BDelete;
+        private System.Windows.Forms.Button BTime;
     }
 }
 

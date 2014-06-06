@@ -30,3 +30,8 @@ E:\FailCake\Documents\ESCOLA\EDA\eda1314-11243-12927\Pepino-A-Star\Pepino-A-Star
 E:\FailCake\Documents\ESCOLA\EDA\eda1314-11243-12927\Pepino-A-Star\Pepino-A-Star\obj\Debug\Pepino-A-Star.pdb
 E:\FailCake\Documents\ESCOLA\EDA\eda1314-11243-12927\Pepino-A-Star\Pepino-A-Star\obj\Debug\Pepino_A_Star.PathSettings.resources
 E:\FailCake\Documents\ESCOLA\EDA\eda1314-11243-12927\Pepino-A-Star\Pepino-A-Star\obj\Debug\Pepino_A_Star.PathTime.resources
+E:\FailCake\Documents\ESCOLA\EDA\eda1314-11243-12927\Pepino-A-Star\Pepino-A-Star\bin\Debug\Pepino-A-Star.XML
+G:\eda1314-11243-12927\Pepino-A-Star\Pepino-A-Star\bin\Debug\Pepino-A-Star.exe.config
+G:\eda1314-11243-12927\Pepino-A-Star\Pepino-A-Star\bin\Debug\Pepino-A-Star.XML
+G:\eda1314-11243-12927\Pepino-A-Star\Pepino-A-Star\obj\Debug\Pepino-A-Star.exe
+G:\eda1314-11243-12927\Pepino-A-Star\Pepino-A-Star\obj\Debug\Pepino-A-Star.pdb

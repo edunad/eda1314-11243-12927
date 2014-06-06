@@ -1,0 +1,581 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Pepino-A-Star</name>
+    </assembly>
+    <members>
+        <member name="T:Pepino_A_Star.Node">
+            <summary>
+            The Node Class
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.Node.#ctor(Pepino_A_Star.Vector2)">
+            <summary>
+            Node Constructor
+            </summary>
+            <param name="pos">Node Position</param>
+        </member>
+        <member name="M:Pepino_A_Star.Node.CalcTotal">
+            <summary>
+            Calculates the Total f()
+            </summary>
+        </member>
+        <member name="T:Pepino_A_Star.AStarPathFinder">
+            <summary>
+            @author Eduardo Fernandes nº12927
+            @author Damien Fialho nº11243
+            
+            @date 06/06/1024
+            @code https://code.google.com/p/eda1314-11243-12927/
+            
+            The Pathfinder Class. Created by us. Inspired by http://theory.stanford.edu/~amitp/GameProgramming/
+            </summary>
+            
+        </member>
+        <member name="M:Pepino_A_Star.AStarPathFinder.CalculateCost(System.Byte)">
+            <summary>
+            Calculates the Cost based on the color given
+            </summary>
+            <param name="color">The color, from 0 to 255</param>
+            <returns></returns>
+        </member>
+        <member name="M:Pepino_A_Star.AStarPathFinder.IsOutsidePicture(Pepino_A_Star.Vector2)">
+            <summary>
+            Checks if the position is outside the picture.
+            </summary>
+            <param name="_pos">The Position to check</param>
+            <returns></returns>
+        </member>
+        <member name="M:Pepino_A_Star.AStarPathFinder.CreateNeighbors(Pepino_A_Star.Node,Pepino_A_Star.Node)">
+            <summary>
+            Creates the Nod Neighbors
+            </summary>
+            <param name="_nod">The Node</param>
+            <param name="_finalNode">The End Node</param>
+        </member>
+        <member name="M:Pepino_A_Star.AStarPathFinder.FindPath(Pepino_A_Star.Node,Pepino_A_Star.Node,System.Int32)">
+            <summary>
+            Finds the Path between the start node and the end node
+            </summary>
+            <param name="_start">Start Node</param>
+            <param name="_end">End Node</param>
+            <param name="Steps">Each Time Step</param>
+            <returns>The Average</returns>
+        </member>
+        <member name="M:Pepino_A_Star.AStarPathFinder.Get1DVector(System.Int32,System.Int32)">
+            <summary>
+            Converts 2D to 1D
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns>The Vector</returns>
+            
+        </member>
+        <member name="M:Pepino_A_Star.AStarPathFinder.GetPGMData(System.Int32,System.Int32)">
+            <summary>
+            Gets the stored PGM Data
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns>The Color</returns>
+        </member>
+        <member name="M:Pepino_A_Star.AStarPathFinder.ManhattenH(Pepino_A_Star.Node,Pepino_A_Star.Node)">
+            <summary>
+            Manhatten Heuristic
+            </summary>
+            <param name="_start">Node to Check</param>
+            <param name="_end">End Node</param>
+            <returns></returns>
+        </member>
+        <member name="M:Pepino_A_Star.AStarPathFinder.Euclidean(Pepino_A_Star.Node,Pepino_A_Star.Node)">
+            <summary>
+            Euclidean Heuristic
+            </summary>
+            <param name="_start">Node to Check</param>
+            <param name="_end">End Node</param>
+            <returns></returns>
+        </member>
+        <member name="M:Pepino_A_Star.AStarPathFinder.GetMinTotal(System.Collections.Generic.Dictionary{System.Int32,Pepino_A_Star.Node})">
+            <summary>
+            Gets the Min Node total on the List.
+            </summary>
+            <param name="_list">The List to Check from</param>
+            <returns>The Min Node</returns>
+        </member>
+        <member name="T:Pepino_A_Star.GlobalStuff">
+            <summary>
+            @author Eduardo Fernandes nº12927
+            @author Damien Fialho nº11243
+            
+            @date 06/06/1024
+            @code https://code.google.com/p/eda1314-11243-12927/
+            
+            Global Variables to store data.
+            </summary>
+            
+        </member>
+        <member name="T:Pepino_A_Star.PathFinderMenu">
+            <summary>
+            @author Eduardo Fernandes nº12927
+            @author Damien Fialho nº11243
+            
+            @date 06/06/1024
+            @code https://code.google.com/p/eda1314-11243-12927/
+            
+            The program's main menu, where the user can choose the many options to costumize and control the pathfinding.
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.PathFinder_Load(System.Object,System.EventArgs)">
+            <summary>
+            Prepares the main menu.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.SetText(System.String)">
+            <summary>
+            Sets the text on the button
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.SetPathFinished">
+            <summary>
+            Tells the program that the pathfinding is done.
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.SetImagePreview(System.Drawing.Bitmap)">
+            <summary>
+            Changes the pathfinding Image.
+            Used to Create the path.
+            </summary>
+            <param name="img"></param>
+            
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.LockControls">
+            <summary>
+            Locks all the controls
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.UnlockControls">
+            <summary>
+            Unlocks the controls
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.BFind_Click(System.Object,System.EventArgs)">
+            <summary>
+            Starts the Finding.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.FindPath(System.Object)">
+            <summary>
+            Created on a new thread.
+            Prepares the pathfinder to find the given paths.
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.GetAverageCicles(System.Int32,Pepino_A_Star.Node,Pepino_A_Star.Node,System.Int32)">
+            <summary>
+            Generates the Results.
+            </summary>
+            <param name="NCicle">Number of experiments</param>
+            <param name="_startPoint">Start node</param>
+            <param name="_endPoint">End node</param>
+            <param name="Step">Steps per experiment</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.BClose_Click(System.Object,System.EventArgs)">
+            <summary>
+            Closes the menu
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.BSettings_Click(System.Object,System.EventArgs)">
+            <summary>
+            Opens the settings menu
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.BDelete_Click(System.Object,System.EventArgs)">
+            <summary>
+            Cleans the Image
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.BTime_Click(System.Object,System.EventArgs)">
+            <summary>
+            Opens the Time Menu
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Pepino_A_Star.PathFinderMenu.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Pepino_A_Star.PathFinderMenu.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Pepino_A_Star.PathSettings">
+            <summary>
+            @author Eduardo Fernandes nº12927
+            @author Damien Fialho nº11243
+            
+            @date 06/06/1024
+            @code https://code.google.com/p/eda1314-11243-12927/
+            
+            The Settings Menu
+            </summary>
+            
+        </member>
+        <member name="M:Pepino_A_Star.PathSettings.PathSettings_Load(System.Object,System.EventArgs)">
+            <summary>
+            Settings Menu load
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PathSettings.DoShowAnimation">
+            <summary>
+            Show Animation
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.PathSettings.DoHideAnimation">
+            <summary>
+            Hide Animation
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.PathSettings.updateTick_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Update Location
+            Animate Form
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PathSettings.BPathColor_Click(System.Object,System.EventArgs)">
+            <summary>
+            The Path Color
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PathSettings.CHeurisitc_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Selected Heuristic
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Pepino_A_Star.PathSettings.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.PathSettings.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Pepino_A_Star.PathSettings.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Pepino_A_Star.PathTime">
+            <summary>
+            @author Eduardo Fernandes nº12927
+            @author Damien Fialho nº11243
+            
+            @date 06/06/1024
+            @code https://code.google.com/p/eda1314-11243-12927/
+            
+            The Time Menu
+            </summary>
+            
+        </member>
+        <member name="M:Pepino_A_Star.PathTime.PathTime_Load(System.Object,System.EventArgs)">
+            <summary>
+            Start Menu
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PathTime.AddChartPoint(System.Double)">
+            <summary>
+            Adds Average to the chart
+            </summary>
+            <param name="time">The Average Time</param>
+        </member>
+        <member name="M:Pepino_A_Star.PathTime.AddNodeInfo(System.String)">
+            <summary>
+            Adds the Node info to the comboBox
+            </summary>
+            <param name="text">Info</param>
+        </member>
+        <member name="M:Pepino_A_Star.PathTime.DoShowAnimation">
+            <summary>
+            Shows Animation
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.PathTime.DoHideAnimation">
+            <summary>
+            Shows Hide Animation
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.PathTime.ClearNodeList">
+            <summary>
+            Clears the Node List Information
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.PathTime.updateTick_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Update Tick.
+            Animates the Form
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PathTime.BSave_Click(System.Object,System.EventArgs)">
+            <summary>
+            Save Button, to save the data.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Pepino_A_Star.PathTime.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.PathTime.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Pepino_A_Star.PathTime.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Pepino_A_Star.PGMExtremeLoader">
+            <summary>
+            @author Eduardo Fernandes nº12927
+            @author Damien Fialho nº11243
+            
+            @date 06/06/1024
+            @code https://code.google.com/p/eda1314-11243-12927/
+            
+            The Loader and Image creator
+            </summary>
+            
+        </member>
+        <member name="M:Pepino_A_Star.PGMExtremeLoader.PGMExtremeLoader_Load(System.Object,System.EventArgs)">
+            <summary>
+            Loads the PGMLoader
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PGMExtremeLoader.SetProgress(System.Int32)">
+            <summary>
+            Shows the Conversion Progress
+            </summary>
+            <param name="pVal"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PGMExtremeLoader.SetText(System.String)">
+            <summary>
+            Shows the Conversion Percentage and information
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:Pepino_A_Star.PGMExtremeLoader.ContinueProgram">
+            <summary>
+            Continues Program
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.PGMExtremeLoader.LoadingThead">
+            <summary>
+            Checks if the PGM Exists
+            Checks if the bmp Exists
+            If not, creates it.
+            </summary>
+        </member>
+        <member name="F:Pepino_A_Star.PGMExtremeLoader.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.PGMExtremeLoader.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Pepino_A_Star.PGMExtremeLoader.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Pepino_A_Star.PixelUtilities">
+            <summary>
+            @author Eduardo Fernandes nº12927
+            @author Damien Fialho nº11243
+            
+            @date 06/06/1024
+            @code https://code.google.com/p/eda1314-11243-12927/
+            
+            PixelUtilities created by us.
+            </summary>
+            
+        </member>
+        <member name="M:Pepino_A_Star.PixelUtilities.GetPixel(System.Drawing.Bitmap,System.Int32,System.Int32)">
+            <summary>
+            Faster Method to get the Color from the given pixel
+            </summary>
+            <param name="bmp">The Bitmap</param>
+            <param name="x">X Position</param>
+            <param name="y">Y Position</param>
+            <returns>Pixel Color</returns>
+        </member>
+        <member name="M:Pepino_A_Star.PixelUtilities.DrawSquare(System.Drawing.Bitmap,Pepino_A_Star.Vector2,Pepino_A_Star.Vector2,System.Drawing.Color)">
+            <summary>
+            Draws a square on the bitmap
+            </summary>
+            <param name="bmp">The Image</param>
+            <param name="_pos">Position to Draw</param>
+            <param name="_size">Size</param>
+            <param name="cl">Color</param>
+        </member>
+        <member name="M:Pepino_A_Star.PixelUtilities.SetPixel(System.Drawing.Bitmap,System.Int32,System.Int32,System.Drawing.Color)">
+            <summary>
+            Faster Method to set the Pixel Color
+            </summary>
+            <param name="bmp">The Image</param>
+            <param name="x">X Position</param>
+            <param name="y">Y Position</param>
+            <param name="c">Color</param>
+        </member>
+        <member name="M:Pepino_A_Star.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:Pepino_A_Star.Vector2">
+            <summary>
+            @author Eduardo Fernandes nº12927
+            @author Damien Fialho nº11243
+            
+            @date 06/06/1024
+            @code https://code.google.com/p/eda1314-11243-12927/
+            
+            Vector2 class created by us.
+            </summary>
+            
+        </member>
+        <member name="M:Pepino_A_Star.Vector2.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:Pepino_A_Star.Vector2.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructor with a given x and y
+            </summary>
+            <param name="X">X Pos</param>
+            <param name="Y">Y Pos</param>
+        </member>
+        <member name="M:Pepino_A_Star.Vector2.#ctor(Pepino_A_Star.Vector2)">
+            <summary>
+            Constructor with a given vector2
+            </summary>
+            <param name="_st">Vector2 object</param>
+        </member>
+        <member name="M:Pepino_A_Star.Vector2.ToString">
+            <summary>
+            Prints the Location
+            </summary>
+            <returns>Location</returns>
+        </member>
+        <member name="M:Pepino_A_Star.Vector2.SetPos(System.Int32,System.Int32)">
+            <summary>
+            Sets the Vector2 Location
+            </summary>
+            <param name="X">X Position</param>
+            <param name="Y">Y Position</param>
+        </member>
+        <member name="M:Pepino_A_Star.Vector2.GetX">
+            <summary>
+            Gets the X Position
+            </summary>
+            <returns>X Position</returns>
+        </member>
+        <member name="M:Pepino_A_Star.Vector2.GetY">
+            <summary>
+            Gets the Y Position
+            </summary>
+            <returns>Y Position</returns>
+        </member>
+        <member name="T:Pepino_A_Star.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Pepino_A_Star.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Pepino_A_Star.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Pepino_A_Star.Properties.Resources.asterisk_yellow">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Pepino_A_Star.Properties.Resources.clock">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Pepino_A_Star.Properties.Resources.clock_red">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Pepino_A_Star.Properties.Resources.wrench">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Pepino_A_Star.Properties.Resources.wrench_orange">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
