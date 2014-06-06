@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -12,6 +13,17 @@ using System.Windows.Forms;
 
 namespace Pepino_A_Star
 {
+    /// <summary>
+    /// @author Eduardo Fernandes nº12927
+    /// @author Damien Fialho nº11243
+    /// 
+    /// @date 06/06/1024
+    /// @code https://code.google.com/p/eda1314-11243-12927/
+    /// 
+    /// The Loader and Image creator
+    /// </summary>
+    /// 
+
     public partial class PGMExtremeLoader : Form
     {
 
@@ -22,12 +34,17 @@ namespace Pepino_A_Star
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Loads the PGMLoader
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PGMExtremeLoader_Load(object sender, EventArgs e)
         {
 
             _loadThread = new Thread(LoadingThead);
             _loadThread.Start();
-            
+
         }
 
 
@@ -35,6 +52,10 @@ namespace Pepino_A_Star
         public delegate void SetTextHandler(string txt);
         public delegate void SetContinueProgram();
 
+        /// <summary>
+        /// Shows the Conversion Progress
+        /// </summary>
+        /// <param name="pVal"></param>
         public void SetProgress(int pVal)
         {
             SetProgressHandler SPH = new SetProgressHandler(SetProgress);
@@ -45,27 +66,38 @@ namespace Pepino_A_Star
             }
             else
             {
-                if(pVal <= 100)
-   ﻿                BarProg.Value = pVal;     
+                if (pVal <= 100)
+   ﻿                BarProg.Value = pVal;
             }
 
         }
 
+        /// <summary>
+        /// Shows the Conversion Percentage and information
+        /// </summary>
+        /// <param name="text"></param>
         public void SetText(string text)
         {
-            SetTextHandler SPH = new SetTextHandler(SetText);
+            try
+            {
+                SetTextHandler SPH = new SetTextHandler(SetText);
 
-            if (this.InvokeRequired)
-            {
-                this.Invoke(SPH, (string)text);
-            }
-            else
-            {
+                if (this.InvokeRequired)
+                {
+                    this.Invoke(SPH, (string)text);
+                }
+                else
+                {
    ﻿             LStatus.Text = text;
+                }
             }
+            catch { }
 
         }
 
+        /// <summary>
+        /// Continues Program
+        /// </summary>
         public void ContinueProgram()
         {
             SetContinueProgram SPH = new SetContinueProgram(ContinueProgram);
@@ -81,6 +113,11 @@ namespace Pepino_A_Star
 
         }
 
+        /// <summary>
+        /// Checks if the PGM Exists
+        /// Checks if the bmp Exists
+        /// If not, creates it.
+        /// </summary>
         public void LoadingThead()
         {
 
@@ -90,26 +127,26 @@ namespace Pepino_A_Star
             if (File.Exists("Texture/el_pepino.bmp"))
             {
                 SetText("Image Found!");
-                Thread.Sleep(700);
+                Thread.Sleep(1000);
 
-                GlobalStuff._image = new Bitmap("Texture/el_pepino.bmp");
+                GlobalStuff._OriginalImage = new Bitmap("Texture/el_pepino.bmp");
                 ContinueProgram();
 
                 return;
             }
 
             SetText("Image Not Found! Checking peppersgrad.pgm ..");
-            Thread.Sleep(700);
+            Thread.Sleep(2000);
 
             if (!File.Exists("Texture/peppersgrad.pgm"))
             {
                 SetText("PGM Not Found! Impossible to Continue!");
-                Thread.Sleep(700);
-                GlobalStuff._pathMenu.Close();
+                Thread.Sleep(2000);
+                Process.GetCurrentProcess().Kill();
             }
 
             SetText("Creating el_pepino.bmp ..");
-            Thread.Sleep(700);
+            Thread.Sleep(2000);
 
             #region CreateImage
 
@@ -121,54 +158,53 @@ namespace Pepino_A_Star
 
             Bitmap _image = null;
 
-            using (StreamReader sr = new StreamReader("Texture/peppersgrad.pgm"))
+            string[] lines = File.ReadAllLines("Texture/peppersgrad.pgm");
+            int Indx = 0;
+
+            foreach (string line in lines)
             {
-                string read = "";
-                int Indx = 0;
 
-                while((read = sr.ReadLine() ) != ""){
+                if (line == "") continue;
 
-                    if (Indx == 2)
+                if (Indx == 2)
+                {
+                    string[] size = line.Split(' ');
+                    Width = Convert.ToInt32(size[0]);
+                    Height = Convert.ToInt32(size[1]);
+
+                    _image = new Bitmap(Width, Height);
+                }
+                else if (Indx > 4)
+                {
+                    if (_image == null) break;
+
+                    if (X < Width - 1)
+                        X += 1;
+                    else
                     {
-                        string[] size = read.Split(' ');
-                        Width = Convert.ToInt32(size[0]);
-                        Height = Convert.ToInt32(size[1]);
-
-                        _image = new Bitmap(Width,Height);
-                    }
-                    else if (Indx > 4)
-                    {
-                        if (_image == null) break;
-
-                        if (X < Width - 1)
-                            X += 1;
-                        else
-                        {
-                            X = 0;
-                            Y += 1;
-                        }
-
-                        if (Y > Height - 1) break;
-
-                        byte Clr = Convert.ToByte(read);
-                        _image.SetPixel(X, Y, Color.FromArgb(Clr, Clr, Clr));
+                        X = 0;
+                        Y += 1;
                     }
 
-                    Indx += 1;
-                    int Prog = (Indx * 100) / 262148;
+                    if (Y > Height - 1) break;
 
-                    SetText("Creating el_pepino.bmp ( " + Prog + "% )");
-                    SetProgress(Prog);
+                    byte Clr = Convert.ToByte(line);
+                    _image.SetPixel(X, Y, Color.FromArgb(Clr, Clr, Clr));
                 }
 
-                if (_image != null)                
-                    if(!_image.Size.IsEmpty)
-                        _image.Save("Texture/el_pepino.bmp",System.Drawing.Imaging.ImageFormat.Bmp);
-                    
-                
+                Indx += 1;
+                int Prog = (Indx * 100) / lines.Count();
+
+                SetText("Creating el_pepino.bmp ( " + Prog + "% )");
+                SetProgress(Prog);
             }
 
-            GlobalStuff._image = _image;
+            if (_image != null)
+                if (!_image.Size.IsEmpty)
+                    _image.Save("Texture/el_pepino.bmp", System.Drawing.Imaging.ImageFormat.Bmp);
+
+
+            GlobalStuff._OriginalImage = _image;
             ContinueProgram();
 
             #endregion
