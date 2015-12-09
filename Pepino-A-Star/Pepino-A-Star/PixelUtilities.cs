@@ -54,6 +54,8 @@ namespace Pepino_A_Star
             }
         }
 
+        // hei
+
         /// <summary>
         /// Draws a square on the bitmap
         /// </summary>
