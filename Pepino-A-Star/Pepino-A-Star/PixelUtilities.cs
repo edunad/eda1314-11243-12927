@@ -11,7 +11,15 @@ namespace Pepino_A_Star
 {
     /// <summary>
     /// @author Eduardo Fernandes nº12927
-
+    /// @author Damien Fialho nº11243
+    /// 
+    /// @date 06/06/1024
+    /// @code https://code.google.com/p/eda1314-11243-12927/
+    /// 
+    /// PixelUtilities created by us.
+    /// </summary>
+    /// 
+    public static class PixelUtilities
     {
         /// <summary>
         /// Faster Method to get the Color from the given pixel
@@ -45,6 +53,8 @@ namespace Pepino_A_Star
                 return Color.FromArgb(r, g, b);
             }
         }
+
+        // hei
 
         /// <summary>
         /// Draws a square on the bitmap
