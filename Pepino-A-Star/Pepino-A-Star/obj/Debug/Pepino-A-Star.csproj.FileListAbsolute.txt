@@ -35,3 +35,7 @@ G:\eda1314-11243-12927\Pepino-A-Star\Pepino-A-Star\bin\Debug\Pepino-A-Star.exe.c
 G:\eda1314-11243-12927\Pepino-A-Star\Pepino-A-Star\bin\Debug\Pepino-A-Star.XML
 G:\eda1314-11243-12927\Pepino-A-Star\Pepino-A-Star\obj\Debug\Pepino-A-Star.exe
 G:\eda1314-11243-12927\Pepino-A-Star\Pepino-A-Star\obj\Debug\Pepino-A-Star.pdb
+C:\Projects\pepino-a-star\Pepino-A-Star\Pepino-A-Star\bin\Debug\Pepino-A-Star.exe.config
+C:\Projects\pepino-a-star\Pepino-A-Star\Pepino-A-Star\bin\Debug\Pepino-A-Star.XML
+C:\Projects\pepino-a-star\Pepino-A-Star\Pepino-A-Star\obj\Debug\Pepino-A-Star.exe
+C:\Projects\pepino-a-star\Pepino-A-Star\Pepino-A-Star\obj\Debug\Pepino-A-Star.pdb
